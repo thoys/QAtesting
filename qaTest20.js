@@ -240,8 +240,8 @@ function generateSmokeTestManualTestingReport(){
 		} else{
 			MyStats.createTestBlocks = "**localhost 'createTestBlocks.js'** FAILURE";
 		}
-		if(Menu.isOptionChecked("localhost ATP Upload + Edit - SUCCESS")){
-			MyStats.atpUploadEdit = "localhost ATP Upload + Add To World + Move Around + Delete - SUCCESS";
+		if(Menu.isOptionChecked("localhost ATP Upload + Add To World + Move Around + Delete - SUCCESS")){
+			MyStats.atpUploadEdit = "**localhost ATP Upload + Add To World + Move Around + Delete - SUCCESS";
 		} else{
 			MyStats.atpUploadEdit = "**localhost ATP Upload + Add To World + Move Around + Delete - FAILURE";
 		}
