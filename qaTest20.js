@@ -194,7 +194,7 @@ function generateNonSmokeTestManualTestingReport(){
 
 	print("Launching Web Window...");
 
-	var htmlUrl = Script.resolvePath("https://raw.githubusercontent.com/cozza13/QAtesting/master/qaTest20nstmtr.html")
+	var htmlUrl = Script.resolvePath("qaTest20nstmtr.html")
 	webWindow = new OverlayWebWindow('Non-Smoke Test Manual Testing Report', htmlUrl, 800, 700, false);
 	webWindow.webEventReceived.connect(function(data) {
 		print("JS Side Event Received: " + data);
