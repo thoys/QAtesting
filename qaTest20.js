@@ -17,6 +17,7 @@ const createTestBlocksScript = "https://raw.githubusercontent.com/highfidelity/h
 const harmonicOscillatorScript = "http://s3.amazonaws.com/hifi-public/scripts/harmonicOscillator.js";
 const reverbTestScript = "http://s3.amazonaws.com/hifi-public/scripts/utilities/tools/reverbTest.js";
 const playaPerformanceTestScript = "https://raw.githubusercontent.com/highfidelity/hifi/master/scripts/developer/tests/playaPerformanceTest.js";
+const GITURLBASE = "https://raw.githubusercontent.com/cozza13/QAtesting/master/";
 
 // Create global variables.
 var additionalTestResultsObservations;
@@ -194,7 +195,7 @@ function generateNonSmokeTestManualTestingReport(){
 
 	print("Launching Web Window...");
 
-	var htmlUrl = Script.resolvePath("qaTest20nstmtr.html")
+	var htmlUrl = Script.resolvePath(GITURLBASE + "qaTest20nstmtr.html")
 	webWindow = new OverlayWebWindow('Non-Smoke Test Manual Testing Report', htmlUrl, 800, 700, false);
 	webWindow.webEventReceived.connect(function(data) {
 		print("JS Side Event Received: " + data);
@@ -227,7 +228,7 @@ function generateSmokeTestManualTestingReport(){
 
 	print("Launching Web Window...");
 
-	var htmlUrl = Script.resolvePath("qaTest20stmtr.html")
+	var htmlUrl = Script.resolvePath(GITURLBASE + "qaTest20stmtr.html")
 	webWindow = new OverlayWebWindow('Smoke Test Manual Testing Report', htmlUrl, 800, 700, false);
 	webWindow.webEventReceived.connect(function(data) {
 		print("JS Side Event Received: " + data);
@@ -298,7 +299,7 @@ function generateSmokeTestManualTestingReport(){
 function generateDomainStatsReport(){
 	print("Launching Web Window...");
 
-	var htmlUrl = Script.resolvePath("qaTest20dsr.html")
+	var htmlUrl = Script.resolvePath(GITURLBASE + "qaTest20dsr.html")
 	webWindow = new OverlayWebWindow('Domain Stats Report', htmlUrl, 550, 560, false);
 	webWindow.webEventReceived.connect(function(data){
 		print("JS Side Event Received: " + data);
@@ -411,7 +412,7 @@ function generateHMDRCManualTestingReport(){
 
 	print("Launching Web Window...");
 
-	var htmlUrl = Script.resolvePath("qaTest20HMDRCmtr.html")
+	var htmlUrl = Script.resolvePath(GITURLBASE + "qaTest20HMDRCmtr.html")
 	webWindow = new OverlayWebWindow('HMD RC Manual Testing Report', htmlUrl, 400, 500, false);
 	webWindow.webEventReceived.connect(function(data) {
 		print("JS Side Event Received: " + data);
@@ -471,7 +472,7 @@ function generateHMDRCManualTestingReport(){
 function hmdRCHelp(){
 	print("Launching Web Window...");
 
-	var htmlUrl = Script.resolvePath("qaTest20HMDRChelp.html")
+	var htmlUrl = Script.resolvePath(GITURLBASE + "qaTest20HMDRChelp.html")
 	webWindow = new OverlayWebWindow('QA Test 2.0 HMD RC Test Instructions', htmlUrl, 900, 700, false);
 }
 
@@ -479,7 +480,7 @@ function hmdRCHelp(){
 function help(){
 	print("Launching Web Window...");
 
-	var htmlUrl = Script.resolvePath("qaTest20help.html")
+	var htmlUrl = Script.resolvePath(GITURLBASE + "qaTest20help.html")
 	webWindow = new OverlayWebWindow('QA Test 2.0 Help', htmlUrl, 800, 700, false);
 }
 
