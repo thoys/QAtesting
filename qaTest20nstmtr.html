@@ -1,0 +1,58 @@
+<!-- -->
+<!-- QA Test 2.0 Non-Smoke Test Manual Testing Report -->
+<!-- ************************************************ -->
+<!-- -->
+<!-- Created by Kevin M. Thomas & James Pollack & Chris Collins 05/14/16. -->
+<!-- Copyright 2016 High Fidelity, Inc. -->
+<!-- -->
+<!-- Non-Smoke Test Manual Testing Report HTML portion of the JavaScript for the High Fidelity QA Testers to automate data collection, report real-time testing results including HMD testing and generate a formatted report for GitHub. -->
+<!-- -->
+<!-- Distributed under the Apache License, Version 2.0. -->
+<!-- See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html -->
+<!-- -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Properties</title>
+		<!-- Load JQuery/QT/Event Bridge/Firebug libary. -->
+		<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>
+		<script type="text/javascript" src="eventBridgeLoader.js"></script>
+		<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
+	<script>
+	
+	// Function to load the event bridge.
+	window.onload = function(){ 
+		openEventBridge(function(){
+			EventBridge.scriptEventReceived.connect(function(message){
+				writeToStatsHolder(message);
+			});
+		});
+	}
+
+	// Function to create a stats holder to parse the JSON information to which JQuery parses to JS file.
+	writeToStatsHolder = function(message){
+		try{
+			var MyStats = JSON.parse(message);
+		}
+		catch(e){
+			print('ERROR Parsing JSON');
+		}
+			$('#getUsername').text(MyStats.getUsername);
+			$('#nonSmokeTestQAPass').text(MyStats.nonSmokeTestQAPass);
+			$('#additionalTestResultsObservations').text(MyStats.additionalTestResultsObservations);
+	}
+	</script>
+	</head>
+	<body class="properties">
+		<div id="statsHolder">
+			<div>## QA Test</span></div>
+			<div>**QA Tester**: <span id="getUsername"></span></div>
+			<div>**QA Pass**: <span id="nonSmokeTestQAPass"></span></div>
+			<div>**Additional Test Results + Observations**: <span id="additionalTestResultsObservations"></span></div>
+			<br><br>
+		</div>
+	</body>
+</html>

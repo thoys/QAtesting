@@ -1,0 +1,67 @@
+<!-- -->
+<!-- QA Test 2.0 HMD RC Manual Testing Report -->
+<!-- ******************************************** -->
+<!-- -->
+<!-- Created by Kevin M. Thomas & James Pollack & Chris Collins 05/14/16. -->
+<!-- Copyright 2016 High Fidelity, Inc. -->
+<!-- -->
+<!-- Smoke Test Manual Testing Report HTML portion of the JavaScript for the High Fidelity QA Testers to automate data collection, report real-time testing results including HMD testing and generate a formatted report for GitHub. -->
+<!-- -->
+<!-- Distributed under the Apache License, Version 2.0. -->
+<!-- See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html -->
+<!-- -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Properties</title>
+		<!-- Load JQuery/QT/Event Bridge/Firebug libary. -->
+		<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>
+		<script type="text/javascript" src="eventBridgeLoader.js"></script>
+		<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
+	<script>
+	
+	// Function to load the event bridge.
+	window.onload = function(){ 
+		openEventBridge(function(){
+			EventBridge.scriptEventReceived.connect(function(message){
+				writeToStatsHolder(message);
+			});
+		});
+	}
+
+	// Function to create a stats holder to parse the JSON information to which JQuery parses to JS file.
+	writeToStatsHolder = function(message){
+		try{
+			var MyStats = JSON.parse(message);
+		}
+		catch(e){
+			print('ERROR Parsing JSON');
+		}
+			$('#eye01Test').text(MyStats.eye01Test);
+			$('#eye02Test').text(MyStats.eye02Test);
+			$('#eye03Test').text(MyStats.eye03Test);
+			$('#eye04Test').text(MyStats.eye04Test);
+			$('#eye05Test').text(MyStats.eye05Test);
+			$('#eye06Test').text(MyStats.eye06Test);
+			$('#eye07Test').text(MyStats.eye07Test);
+			$('#additionalTestResultsObservations').text(MyStats.additionalTestResultsObservations);
+	}
+	</script>
+	</head>
+	<body class="properties">
+		<div id="statsHolder">
+			<div>**EYE-01 Test Result**: <span id="eye01Test"></span></div>
+			<div>**EYE-02 Test Result**: <span id="eye02Test"></span></div>
+			<div>**EYE-03 Test Result**: <span id="eye03Test"></span></div>
+			<div>**EYE-04 Test Result**: <span id="eye04Test"></span></div>
+			<div>**EYE-05 Test Result**: <span id="eye05Test"></span></div>
+			<div>**EYE-06 Test Result**: <span id="eye06Test"></span></div>
+			<div>**EYE-07 Test Result**: <span id="eye07Test"></span></div>
+			<div>**Additional Test Results + Observations**: <span id="additionalTestResultsObservations"></span></div>
+			<br><br><br>
+		</div>
+	</body>
+</html>

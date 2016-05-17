@@ -1,0 +1,164 @@
+
+<!-- -->
+<!-- QA Test 2.0 Domain Stats Report -->
+<!-- ******************************* -->
+<!-- -->
+<!-- Created by Kevin M. Thomas & James Pollack & Chris Collins 05/14/16. -->
+<!-- Copyright 2016 High Fidelity, Inc. -->
+<!-- -->
+<!--  Domain Stats Report HTML portion of the JavaScript for the High Fidelity QA Testers to automate data collection, report real-time testing results including HMD testing and generate a formatted report for GitHub. -->
+<!-- -->
+<!-- Distributed under the Apache License, Version 2.0. -->
+<!-- See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html -->
+<!-- -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Properties</title>
+		<!-- Load JQuery/QT/Event Bridge/Firebug libary. -->
+		<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>
+		<script type="text/javascript" src="eventBridgeLoader.js"></script>
+		<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
+	<script>
+	// Function to load the event bridge.
+	window.onload = function(){ 
+		openEventBridge(function(){
+			EventBridge.scriptEventReceived.connect(function(message){
+				writeToStatsHolder(message);
+			});
+		});
+	}
+
+	// Function to create a stats holder to parse the JSON information to which JQuery parses to JS file.
+	writeToStatsHolder = function(message){
+		try{
+			var MyStats = JSON.parse(message);
+		}
+		catch(e){
+			print('ERROR Parsing JSON');
+		}
+			$('#domainInfo').text(MyStats.domainInfo);
+			$('#domainInfo_playa').text(MyStats.domainInfo_playa);
+			$('#domainInfo_cellscience').text(MyStats.domainInfo_cellscience);
+			$('#renderRate').text(MyStats.renderRate);
+			$('#renderRate_playa').text(MyStats.renderRate_playa);
+			$('#renderRate_cellscience').text(MyStats.renderRate_cellscience);
+			$('#presentRate').text(MyStats.presentRate);
+			$('#presentRate_playa').text(MyStats.presentRate_playa);
+			$('#presentRate_cellscience').text(MyStats.presentRate_cellscience);
+			$('#presentNewRate').text(MyStats.presentNewRate);
+			$('#presentNewRate_playa').text(MyStats.presentNewRate_playa);
+			$('#presentNewRate_cellscience').text(MyStats.presentNewRate_cellscience);
+			$('#bufferCPUCount').text(MyStats.bufferCPUCount);
+			$('#bufferCPUCount_playa').text(MyStats.bufferCPUCount_playa);
+			$('#bufferCPUCount_cellscience').text(MyStats.bufferCPUCount_cellscience);
+			$('#bufferGPUCount').text(MyStats.bufferGPUCount);
+			$('#bufferGPUCount_playa').text(MyStats.bufferGPUCount_playa);
+			$('#bufferGPUCount_cellscience').text(MyStats.bufferGPUCount_cellscience);
+			$('#bufferCPUMemoryUsage').text(MyStats.bufferCPUMemoryUsage);
+			$('#bufferCPUMemoryUsage_playa').text(MyStats.bufferCPUMemoryUsage_playa);
+			$('#bufferCPUMemoryUsage_cellscience').text(MyStats.bufferCPUMemoryUsage_cellscience);
+			$('#bufferGPUMemoryUsage').text(MyStats.bufferGPUMemoryUsage);
+			$('#bufferGPUMemoryUsage_playa').text(MyStats.bufferGPUMemoryUsage_playa);
+			$('#bufferGPUMemoryUsage_cellscience').text(MyStats.bufferGPUMemoryUsage_cellscience);
+			$('#textureCPUCount').text(MyStats.textureCPUCount);
+			$('#textureCPUCount_playa').text(MyStats.textureCPUCount_playa);
+			$('#textureCPUCount_cellscience').text(MyStats.textureCPUCount_cellscience);
+			$('#textureGPUCount').text(MyStats.textureGPUCount);
+			$('#textureGPUCount_playa').text(MyStats.textureGPUCount_playa);
+			$('#textureGPUCount_cellscience').text(MyStats.textureGPUCount_cellscience);
+			$('#textureGPUTransferCount').text(MyStats.textureGPUTransferCount);
+			$('#textureGPUTransferCount_playa').text(MyStats.textureGPUTransferCount_playa);
+			$('#textureGPUTransferCount_cellscience').text(MyStats.textureGPUTransferCount_cellscience);
+			$('#textureCPUMemoryUsage').text(MyStats.textureCPUMemoryUsage);
+			$('#textureCPUMemoryUsage_playa').text(MyStats.textureCPUMemoryUsage_playa);
+			$('#textureCPUMemoryUsage_cellscience').text(MyStats.textureCPUMemoryUsage_cellscience);
+			$('#textureGPUMemoryUsage').text(MyStats.textureGPUMemoryUsage);
+			$('#textureGPUMemoryUsage_playa').text(MyStats.textureGPUMemoryUsage_playa);
+			$('#textureGPUMemoryUsage_cellscience').text(MyStats.textureGPUMemoryUsage_cellscience);
+			$('#textureGPUVirtualMemoryUsage').text(MyStats.textureGPUVirtualMemoryUsage);
+			$('#textureGPUVirtualMemoryUsage_playa').text(MyStats.textureGPUVirtualMemoryUsage_playa);
+			$('#textureGPUVirtualMemoryUsage_cellscience').text(MyStats.textureGPUVirtualMemoryUsage_cellscience);
+			$('#frameTriangleCount').text(MyStats.frameTriangleCount);
+			$('#frameTriangleCount_playa').text(MyStats.frameTriangleCount_playa);
+			$('#frameTriangleCount_cellscience').text(MyStats.frameTriangleCount_cellscience);
+			$('#frameTriangleRate').text(MyStats.frameTriangleRate);
+			$('#frameTriangleRate_playa').text(MyStats.frameTriangleRate_playa);
+			$('#frameTriangleRate_cellscience').text(MyStats.frameTriangleRate_cellscience);
+			$('#frameAPIDrawcallCount').text(MyStats.frameAPIDrawcallCount);
+			$('#frameAPIDrawcallCount_playa').text(MyStats.frameAPIDrawcallCount_playa);
+			$('#frameAPIDrawcallCount_cellscience').text(MyStats.frameAPIDrawcallCount_cellscience);
+			$('#frameDrawcallCount').text(MyStats.frameDrawcallCount);
+			$('#frameDrawcallCount_playa').text(MyStats.frameDrawcallCount_playa);
+			$('#frameDrawcallCount_cellscience').text(MyStats.frameDrawcallCount_cellscience);
+			$('#frameDrawcallRate').text(MyStats.frameDrawcallRate);
+			$('#frameDrawcallRate_playa').text(MyStats.frameDrawcallRate_playa);
+			$('#frameDrawcallRate_cellscience').text(MyStats.frameDrawcallRate_cellscience);
+			$('#frameTextureCount').text(MyStats.frameTextureCount);
+			$('#frameTextureCount_playa').text(MyStats.frameTextureCount_playa);
+			$('#frameTextureCount_cellscience').text(MyStats.frameTextureCount_cellscience);
+			$('#frameSetPipelineCount').text(MyStats.frameSetPipelineCount);
+			$('#frameSetPipelineCount_playa').text(MyStats.frameSetPipelineCount_playa);
+			$('#frameSetPipelineCount_cellscience').text(MyStats.frameSetPipelineCount_cellscience);
+			$('#itemOpaques').text(MyStats.itemOpaques);
+			$('#itemOpaques_playa').text(MyStats.itemOpaques_playa);
+			$('#itemOpaques_cellscience').text(MyStats.itemOpaques_cellscience);
+			$('#itemTranslucents').text(MyStats.itemTranslucents);
+			$('#itemTranslucents_playa').text(MyStats.itemTranslucents_playa);
+			$('#itemTranslucents_cellscience').text(MyStats.itemTranslucents_cellscience);
+			$('#itemLights').text(MyStats.itemLights);
+			$('#itemLights_playa').text(MyStats.itemLights_playa);
+			$('#itemLights_cellscience').text(MyStats.itemLights_cellscience);
+			$('#timingOpaques').text(MyStats.timingOpaques);
+			$('#timingOpaques_playa').text(MyStats.timingOpaques_playa);
+			$('#timingOpaques_cellscience').text(MyStats.timingOpaques_cellscience);
+			$('#timingTranslucents').text(MyStats.timingTranslucents);
+			$('#timingTranslucents_playa').text(MyStats.timingTranslucents_playa);
+			$('#timingTranslucents_cellscience').text(MyStats.timingTranslucents_cellscience);
+			$('#timingLighting').text(MyStats.timingLighting);
+			$('#timingLighting_playa').text(MyStats.timingLighting_playa);
+			$('#timingLighting_cellscience').text(MyStats.timingLighting_cellscience);
+			$('#renderFrame').text(MyStats.renderFrame);
+			$('#renderFrame_playa').text(MyStats.renderFrame_playa);
+			$('#renderFrame_cellscience').text(MyStats.renderFrame_cellscience);
+	}
+	</script>
+	</head>
+	<body class="properties">
+		<div id="statsHolder">
+			<div>**Domain**                      |<span id="domainInfo"></span>                  |<span id="domainInfo_playa"></span>                  |<span id="domainInfo_cellscience"></span></div>
+			<div>---|---|---|---</div>
+			<div>**Render Rate**:                |<span id="renderRate"></span>                  |<span id="renderRate_playa"></span>                  |<span id="renderRate_cellscience"></span></div>
+			<div>**Present Rate**:               |<span id="presentRate"></span>                 |<span id="presentRate_playa"></span>                 |<span id="presentRate_cellscience"></span></div>
+			<div>**Present New Rate**:           |<span id="presentNewRate"></span>              |<span id="presentNewRate_playa"></span>              |<span id="presentNewRate_cellscience"></span></div>
+			<div>**CPU Buffer Count**:           |<span id="bufferCPUCount"></span>              |<span id="bufferCPUCount_playa"></span>              |<span id="bufferCPUCount_cellscience"></span></div>
+			<div>**GPU Buffer Count**:           |<span id="bufferGPUCount"></span>              |<span id="bufferGPUCount_playa"></span>              |<span id="bufferGPUCount_cellscience"></span></div>
+			<div>**CPU Memory Usage**:           |<span id="bufferCPUMemoryUsage"></span>        |<span id="bufferCPUMemoryUsage_playa"></span>        |<span id="bufferCPUMemoryUsage_cellscience"></span></div>
+			<div>**GPU Memory Usage**:           |<span id="bufferGPUMemoryUsage"></span>        |<span id="bufferGPUMemoryUsage_playa"></span>        |<span id="bufferGPUMemoryUsage_cellscience"></span></div>
+			<div>**CPU Texture Count**:          |<span id="textureCPUCount"></span>             |<span id="textureCPUCount_playa"></span>             |<span id="textureCPUCount_cellscience"></span></div>
+			<div>**GPU Texture Count**:          |<span id="textureGPUCount"></span>             |<span id="textureGPUCount_playa"></span>             |<span id="textureGPUCount_cellscience"></span></div>
+			<div>**GPU Transfer Count**:         |<span id="textureGPUTransferCount"></span>     |<span id="textureGPUTransferCount_playa"></span>     |<span id="textureGPUTransferCount_cellscience"></span></div>
+			<div>**CPU Texture Memory Usage**:   |<span id="textureCPUMemoryUsage"></span>       |<span id="textureCPUMemoryUsage_playa"></span>       |<span id="textureCPUMemoryUsage_cellscience"></span></div>
+			<div>**GPU Texture Memory Usage**:   |<span id="textureGPUMemoryUsage"></span>       |<span id="textureGPUMemoryUsage_playa"></span>       |<span id="textureGPUMemoryUsage_cellscience"></span></div>
+			<div>**GPU Virtual Memory Usage**:   |<span id="textureGPUVirtualMemoryUsage"></span>|<span id="textureGPUVirtualMemoryUsage_playa"></span>|<span id="textureGPUVirtualMemoryUsage_cellscience"></span></div>
+			<div>**Triangle Count**:             |<span id="frameTriangleCount"></span>          |<span id="frameTriangleCount_playa"></span>          |<span id="frameTriangleCount_cellscience"></span></div>
+			<div>**Triangle Rate**:              |<span id="frameTriangleRate"></span>           |<span id="frameTriangleRate_playa"></span>           |<span id="frameTriangleRate_cellscience"></span></div>
+			<div>**API Drawcall Count**:         |<span id="frameAPIDrawcallCount"></span>       |<span id="frameAPIDrawcallCount_playa"></span>       |<span id="frameAPIDrawcallCount_cellscience"></span></div>
+			<div>**Drawcall Count**:             |<span id="frameDrawcallCount"></span>          |<span id="frameDrawcallCount_playa"></span>          |<span id="frameDrawcallCount_cellscience"></span></div>
+			<div>**Drawcall Rate**:              |<span id="frameDrawcallRate"></span>           |<span id="frameDrawcallRate_playa"></span>           |<span id="frameDrawcallRate_cellscience"></span></div>
+			<div>**State Changes Texture Count**:|<span id="frameTextureCount"></span>           |<span id="frameTextureCount_playa"></span>           |<span id="frameTextureCount_cellscience"></span></div>
+			<div>**Pipeline Count**:             |<span id="frameSetPipelineCount"></span>       |<span id="frameSetPipelineCount_playa"></span>       |<span id="frameSetPipelineCount_cellscience"></span></div>
+			<div>**Item Opaques**:               |<span id="itemOpaques"></span>                 |<span id="itemOpaques_playa"></span>                 |<span id="itemOpaques_cellscience"></span></div>
+			<div>**Item Translucents**:          |<span id="itemTranslucents"></span>            |<span id="itemTranslucents_playa"></span>            |<span id="itemTranslucents_cellscience"></span></div>
+			<div>**Item Lights**:                |<span id="itemLights"></span>                  |<span id="itemLights_playa"></span>                  |<span id="itemLights_cellscience"></span></div>
+			<div>**Timing Opaques**:             |<span id="timingOpaques"></span>               |<span id="timingOpaques_playa"></span>               |<span id="timingOpaques_cellscience"></span></div>
+			<div>**Timing Translucents**:        |<span id="timingTranslucents"></span>          |<span id="timingTranslucents_playa"></span>          |<span id="timingTranslucents_cellscience"></span></div>
+			<div>**Timing Lighting**:            |<span id="timingLighting"></span>              |<span id="timingLighting_playa"></span>              |<span id="timingLighting_cellscience"></span></div>
+			<div>**Render Frame**:               |<span id="renderFrame"></span>                 |<span id="renderFrame_playa"></span>                 |<span id="renderFrame_cellscience"></span></div>
+			<br>
+		</div>
+	</body>
+</html>

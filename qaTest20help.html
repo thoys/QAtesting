@@ -1,0 +1,34 @@
+<!-- -->
+<!-- QA Test 2.0 Help -->
+<!-- **************** -->
+<!-- -->
+<!-- Created by Kevin M. Thomas & James Pollack & Chris Collins 05/14/16. -->
+<!-- Copyright 2016 High Fidelity, Inc. -->
+<!-- -->
+<!-- Help system HTML portion of the JavaScript for the High Fidelity QA Testers to automate data collection, report real-time testing results including HMD testing and generate a formatted report for GitHub. -->
+<!-- -->
+<!-- Distributed under the Apache License, Version 2.0. -->
+<!-- See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html -->
+<!-- -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Properties</title>
+	</head>
+	<body class="properties">
+		<div id="help">
+			<div><h2>Non-Smoke Test Instructions</h2></div>
+			<div><h4>Step 1:</h4> Start at the top of the Non-Smoke Test sub menu and SELECT 'Non-Smoke Test QA Pass - SUCCESS' if the results of your Non-Smoke Test match the expected behavior of the respective PR you are testing.  If that is not the case, leave the selection UNCHECKED.</div>
+			<div><h4>Step 2:</h4> SELECT 'Generate Non-Smoke Test Manual Testing Report' to which a box will pop-up to enter in the results of your test.  Ensure that you provide all of the information that the PR requires and select OK.  This will generate a report for you.</div>
+			<div><h4>Step 3:</h4> CLICK anywhere in the report window and PRESS 'CTRL-A' then PRESS 'CTRL-C'.  Open your web browser.  Visit the respective PR in GitHub and scroll to the bottom of the page.  If you have an account and are logged in to GitHub there will be a text box where you will click your mouse into.  You will see a blinking '|' to which you then PRESS 'CTRL-V'.  The final step is to press the COMMENT button.</div>
+			<div><h2>Smoke Test Instructions</h2></div>
+			<div><h4>Step 1:</h4> Make SURE you run SANDBOX instead of INTERFACE on the respective PR to ensure you have LOCALHOST running.  Click GO HOME and it will load INTERFACE FOR YOU.  Start at the top of the Smoke Test sub menu menu and click LOAD to load the first script within the sub menu.  Upon completion of the first test, click UNLOAD directly underneath the LOAD section of the respect script.  If the results of your test are a SUCCESS, SELECT the box directly underneath which will populate a check mark in the selection.  If that is not the case, leave the selection UNCHECKED.  Repeat the same step with each entry.  Finally, SELECT 'Smoke Test QA Pass - SUCCESS' if the results of your Smoke Test match the expected behavior of the Smoke Test in addition to the respective PR you are testing.  If that is not the case, leave the selection UNCHECKED.</div>
+			<div><h4>Step 2:</h4> SELECT 'Generate Smoke Test Manual Testing Report' to which a box will pop-up to enter in the results of your test.  Ensure that you provide all of the additional information that the PR requires and select OK.  This will generate a report for you.</div> 
+			<div><h4>Step 3:</h4> CLICK anywhere in the report window and PRESS 'CTRL-A' then PRESS 'CTRL-C'.  Minimize Interface and open your web browser.  Visit the respective PR in GitHub and scroll to the bottom of the page.  If you have an account and are logged in to GitHub there will be a text box where you will click your mouse into.  You will see a blinking '|' to which you then PRESS 'CTRL-V'.  Minimize the web browser and return to to the Interface.</div>
+			<div><h4>Step 4:</h4> Make sure you are on your 'localhost' domain and SELECT 'Generate Domain Stats Report' to which will generate a report with the results of the 'localhost' statistics.  DO NOT close the report window.  Teleport to 'playa' with the report window open as the statistical results of the 'playa' domain will add to the existing report.  DO NOT close the report window.  Teleport to 'cellscience' with the report window open as the statistical results of the 'cellscience' domain will add to the existing report.   At this point CLICK anywhere in the report window and PRESS 'CTRL-A' then PRESS 'CTRL-C'.  Minimize the Interface and open your web browser.  Visit the respective PR in GitHub and scroll to the bottom of the window where you entered in your initial report data.  You will see a blinking '|' to which you then PRESS 'CTRL-V'.  The final step is to press the COMMENT button.</div>
+			<br>
+		</div>
+	</body>
+</html>

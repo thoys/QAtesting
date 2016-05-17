@@ -1,0 +1,107 @@
+<!-- -->
+<!-- QA Test 2.0 Help -->
+<!-- **************** -->
+<!-- -->
+<!-- Created by Kevin M. Thomas & James Pollack & Chris Collins 05/14/16. -->
+<!-- Copyright 2016 High Fidelity, Inc. -->
+<!-- -->
+<!-- Help system HTML portion of the JavaScript for the High Fidelity QA Testers to automate data collection, report real-time testing results including HMD testing and generate a formatted report for GitHub. -->
+<!-- -->
+<!-- Distributed under the Apache License, Version 2.0. -->
+<!-- See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html -->
+<!-- -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Properties</title>
+	</head>
+	<body class="properties">
+		<div id="help">
+			<div><h2>HMD RC Test Instructions</h2></div>
+			<div><h4>EYE-01 Test</h4>
+			<ul>
+				<li>Objective:  Eye gaze must be aligned with head if no other avatars are present, in desktop mode.</li>
+				<li>Precondition:  Enter an empty domain.  Ensure 'Display' > 'Desktop' is checked.</li>
+				<li>Step 1:  Enter mirror mode, by pressing the 'h' key.</li>
+				<li>Step 2:  Enable eye tracking lines.</li>
+				<li>Step 3:  Rotate your head up and down by right click dragging the mouse.</li>
+				<li>Step 4:  Examine your avatar's eyes closely.</li>
+				<li>Test Data:  Your avatar should be one of the following: ```Art3mis```, ```Matthew```, ```Pricilla```, ```Mixamo Will```.</li>
+				<li>Expected Result:  Your eyes should always be looking straight ahead with respect to your head.</li>
+			</ul></div>
+			<div><h4>EYE-02 Test</h4>
+			<ul>
+				<li>Objective:  Eye gaze must be aligned with head if no other avatars are present, while wearing an HMD.</li>
+				<li>Precondition:  Enter an empty domain.  You must have an HMD.</li>
+				<li>Step 1:  Ensure 'Display' > 'Open VR (Vive)' or 'Display' > 'Oculus' is checked.</li>
+				<li>Step 2:  Enter mirror mode, by pressing the 'h' key.</li>
+				<li>Step 3:  While wearing your HMD rotate your head.</li>
+				<li>Step 4:  Examine your avatar's eyes closely.</li>
+				<li>Test Data:  Your avatar should be one of the following: ```Art3mis```, ```Matthew```, ```Pricilla```, ```Mixamo Will```.</li>
+				<li>Expected Result:  Your eyes should always be looking straight ahead with respect to your head.</li>
+			</ul></div>
+			<div><h4>EYE-03 Test</h4>
+			<ul>
+				<li>Objective:  Eye gaze tracking must work in desktop full screen mirror mode.</li>
+				<li>Precondition:  Enter a domain with one other person.  You must have an HMD.</li>
+				<li>Step 1:  Move face to face with the other avatar.</li>
+				<li>Step 2:  Enter mirror mode by pressing the 'h' key.</li>
+				<li>Step 3:  Rotate your head up and down by right click dragging the mouse.</li>
+				<li>Step 4:  Examine your avatar's eyes closely.</li>
+				<li>Test Data:  Your avatar should be one of the following: ```Art3mis```, ```Matthew```, ```Pricilla```, ```Mixamo Will```.</li>
+				<li>Expected Result:  Your eyes should focus on one of three points on the other avatars face: The left eye, the right eye and a point directly below bridge of the nose, typically the nose or the upper lip.  Your eyes should switch between these points no faster than 330 ms.  Your eyes should be more likely to look at the eyes then the nose.</li>
+			</ul></div>
+			<div><h4>EYE-04 Test</h4>
+			<ul>
+				<li>Objective:  Eye gaze tracking for your avatar must work in fullscreen mirror mode, while wearing an HMD.</li>
+				<li>Precondition:  Enter a domain with one other person.  You must have an HMD.</li>
+				<li>Step 1:  Ensure 'Display' > 'Open VR (Vive)' or 'Display' > 'Oculus' is checked.</li>
+				<li>Step 2:  Move face to face with the other avatar.</li>
+				<li>Step 3:  Enter mirror mode by pressing the 'h' key.</li>
+				<li>Step 4:  Move your head up and down by right click dragging the mouse.</li>
+				<li>Step 5:  Examine your avatar's eyes closely.</li>
+				<li>Test Data:  Your avatar should be one of the following: ```Art3mis```, ```Matthew```, ```Pricilla```, ```Mixamo Will```.</li>
+				<li>Expected Result:  Your eyes should focus on one of three points on the other avatars face: The left eye, the right eye and a point directly below bridge of the nose, typically the nose or the upper lip.  Your eyes should switch between these points no faster than 330 ms, but no slower than 1 minute.  Your eyes should be more likely to look at the eyes then the nose.</li>
+			</ul></div>
+			<div><h4>EYE-05 Test</h4>
+			<ul>
+				<li>Objective:  Eye gaze tracking for other avatars should work properly in first person desktop mode.</li>
+				<li>Precondition:  Enter a domain with one other person.  You must have an HMD.</li>
+				<li>Step 1:  Ensure 'Display' > 'Desktop' is checked.</li>
+				<li>Step 2:  Move face to face with the other avatar.</li>
+				<li>Step 3:  Enter first person mode by pressing the 'p' key.</li>
+				<li>Step 4:  Have the other avatar rotate his head using an HMD.</li>
+				<li>Step 5:  Examine the other avatar's eyes closely.</li>
+				<li>Test Data:  Your avatar should be one of the following: ```Art3mis```, ```Matthew```, ```Pricilla```, ```Mixamo Will```.</li>
+				<li>Expected Result:  The other avatar's eyes should focus on one of the three points relative to your first person camera:  A point to the left of your screen, A point to the right of your screen and a point below the bottom of your screen.  The other avatar's eyes should switch between these points no faster than 330 ms and no slower than 1 minute.  The other avatar's eyes should be more likely to look at the points to the side of your screen, than the one below the screen.</li>
+			</ul></div>
+			<div><h4>EYE-06 Test</h4>
+			<ul>
+				<li>Objective:  Eye gaze tracking for other avatars should work properly, in first person while wearing an HMD.</li>
+				<li>Precondition:  Enter a domain with one other person, that is wearing an HMD.  Ensure 'Display' > 'Open VR (Vive)' or 'Display' > 'Oculus' is checked.</li>
+				<li>Step 1:  Move face to face with the other avatar.</li>
+				<li>Step 2:  Enter first person mode by pressing the 'p' key.</li>
+				<li>Step 3:  Have the other avatar rotate his head using an HMD.</li>
+				<li>Step 4:  Examine the other avatar's eyes closely.</li>
+				<li>Test Data:  Your avatar should be one of the following: ```Art3mis```, ```Matthew```, ```Pricilla```, ```Mixamo Will```.</li>
+				<li>Expected Result:  The other avatar's eyes should focus on one of the three points:  Your left eye, your right eye, a point below the bridge of your nose.  The other avatar's eyes should switch between these points no faster than 330 ms and no slower than 1 minute.  The other avatar's eyes should be more likely to look your eyes then your nose.</li>
+			</ul></div>
+			<div><h4>EYE-07 Test</h4>
+			<ul>
+				<li>Objective:  Eye gaze tracking should stop looking at an avatar if you turn your head away from them, with and without an HMD.</li>
+				<li>Precondition:  Enter a domain with one other person.  You must have an HMD.</li>
+				<li>Step 1:  Ensure 'Display' > 'Desktop' is checked.</li>
+				<li>Step 2:  Move face to face with another avatar.</li>
+				<li>Step 3:  Enter fullscreen mirror mode by pressing the 'h' key.</li>
+				<li>Step 4:  Use the arrow keys to turn toward and away from the other avatar.</li>
+				<li>Step 5:  Examine your eyes closely.</li>
+				<li>Step 6:  Repeat steps 1-5 while wearing an HMD.</li>
+				<li>Test Data:  Your avatar should be one of the following: ```Art3mis```, ```Matthew```, ```Pricilla```, ```Mixamo Will```.</li>
+				<li>Expected Result:  If your avatar's head is facing less than 45 degrees away from the other avatar, you should make eye contact with them.  Otherwise your eyes should look 'straight ahead' and not be focused on the other avatar.</li>
+			</ul></div>
+			<br>
+		</div>
+	</body>
+</html>
