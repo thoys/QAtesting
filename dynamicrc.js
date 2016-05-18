@@ -50,6 +50,7 @@ req.onreadystatechange = function() {
                 print("DOMAIN: " + domain);
                 var locations = req.response[domain];
                 var userAreas = [];
+                Menu.addMenu("QA Test > RC Test");
                 for (var i = 0; i < locations.length; i++) {
                     var loc = locations[i];
                     var x1 = loc[1],
