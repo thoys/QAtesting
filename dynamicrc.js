@@ -83,7 +83,6 @@ req.onreadystatechange = function() {
           if (loc[1] != "") {
             menuParameters("QA Test > RC Test", loc[0]);
           }
-menuParameters("QA Test > RC Test","Generate RC Results [CUT + PASTE RESULT]");
           userAreas.push({
             qatest: loc[0],
             qadetails: loc[1],
