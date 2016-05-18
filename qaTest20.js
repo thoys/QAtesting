@@ -241,9 +241,9 @@ function generateSmokeTestManualTestingReport(){
 			MyStats.createTestBlocks = "**localhost 'createTestBlocks.js'** FAILURE";
 		}
 		if(Menu.isOptionChecked("localhost ATP Upload + Add To World + Move Around + Delete - SUCCESS")){
-			MyStats.atpUploadEdit = "**localhost ATP Upload + Add To World + Move Around + Delete - SUCCESS";
+			MyStats.atpUploadEdit = "**localhost ATP Upload + Add To World + Move Around + Delete** SUCCESS";
 		} else{
-			MyStats.atpUploadEdit = "**localhost ATP Upload + Add To World + Move Around + Delete - FAILURE";
+			MyStats.atpUploadEdit = "**localhost ATP Upload + Add To World + Move Around + Delete** FAILURE";
 		}
 		if(Menu.isOptionChecked("Echo Server Audio - SUCCESS")){
 			MyStats.echoServerAudio = "**Echo Server Audio** SUCCESS";
