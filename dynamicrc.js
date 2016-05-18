@@ -71,7 +71,8 @@ req.onreadystatechange = function() {
                   //  menuParameters("QA Test > RC Test", loc[0]);
                   print(userAreas[i].username + ": ");
                 }
-               
+               print(userAreas[0].username + ": first one ");
+               print(userAreas[1].username + ": second one ");
             }
         } else {
             print("Error loading data: " + req.status + " " + req.statusText + ", " + req.errorCode);
