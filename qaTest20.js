@@ -228,7 +228,7 @@ function generateSmokeTestManualTestingReport(){
 	print("Launching Web Window...");
 
 	var htmlUrl = Script.resolvePath("qaTest20stmtr.html")
-	webWindow = new OverlayWebWindow('Smoke Test Manual Testing Report', htmlUrl, 900, 700, false);
+	webWindow = new OverlayWebWindow('Smoke Test Manual Testing Report', htmlUrl, 800, 700, false);
 	webWindow.webEventReceived.connect(function(data) {
 		print("JS Side Event Received: " + data);
 	});
@@ -241,9 +241,9 @@ function generateSmokeTestManualTestingReport(){
 			MyStats.createTestBlocks = "**localhost 'createTestBlocks.js'** FAILURE";
 		}
 		if(Menu.isOptionChecked("localhost ATP Upload + Add To World + Move Around + Delete - SUCCESS")){
-			MyStats.atpUploadEdit = "**localhost ATP Upload + Add To World + Move Around + Delete** SUCCESS";
+			MyStats.atpUploadEdit = "**localhost 'createTestBlocks.js'** SUCCESS";
 		} else{
-			MyStats.atpUploadEdit = "**localhost ATP Upload + Add To World + Move Around + Delete** FAILURE";
+			MyStats.atpUploadEdit = "**localhost 'createTestBlocks.js'** FAILURE";
 		}
 		if(Menu.isOptionChecked("Echo Server Audio - SUCCESS")){
 			MyStats.echoServerAudio = "**Echo Server Audio** SUCCESS";
