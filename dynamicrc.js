@@ -78,7 +78,7 @@ req.onreadystatechange = function() {
                         x2 = loc[2],
                         y1 = loc[3],
                         y2 = loc[4];
-                        if (loc[1] == null){
+                        if (loc[1] != ""){
     menuParameters("QA Test > RC Test", loc[0]);
 }
                         
