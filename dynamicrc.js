@@ -269,7 +269,7 @@ function menuItemEvent(menuItem) {
 
   if (Menu.isOptionChecked("Test 1")) {
     rctest1();
-    Menu.setIsOptionChecked("Test 1", false);
+    Menu.setIsOptionChecked("Test 1", true);
   }
   if (Menu.isOptionChecked("Test 2")) {
     rctest2();
@@ -435,7 +435,9 @@ function rcresults() {
 
   Script.setInterval(function() {
     MyStats.getUsername = Account.getUsername();
+    print("I am here ")
     if (Menu.isOptionChecked("Test 1")) {
+      print("yes item was checked")
       MyStats.createTestBlocks = "**" + result_rc1 + "**" + rctest1;
     } else {
       MyStats.createTestBlocks = "**localhost 'createTestBlocks.js'** FAILURE";
