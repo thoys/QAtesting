@@ -10,6 +10,7 @@
 // Distributed under the Apache License, Version 2.0.
 // See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
 //
+//Chris Collins added some additions to allow for dynamic RC testing
 
 
 // Create const values
@@ -21,6 +22,25 @@ const playaPerformanceTestScript = "https://raw.githubusercontent.com/highfideli
 // Create global variables.
 var additionalTestResultsObservations;
 var result_rc1;
+var result_rc2;
+var result_rc3;
+var result_rc4;
+var result_rc5;
+var result_rc6;
+var result_rc7;
+var result_rc8;
+var result_rc9;
+var result_rc10;
+var result_rc11;
+var result_rc12;
+var result_rc13;
+var result_rc14;
+var result_rc15;
+var result_rc16;
+var result_rc17;
+var result_rc18;
+var result_rc19;
+var result_rc20;
 // Function to set up menu params.
 function menuParameters(menuNameSelection, menuItemNameSelection){
 	Menu.addMenuItem({ 
@@ -58,7 +78,10 @@ req.onreadystatechange = function() {
                         x2 = loc[2],
                         y1 = loc[3],
                         y2 = loc[4];
-                        menuParameters("QA Test > RC Test", loc[0]);
+                        if (loc[1] == null){
+    menuParameters("QA Test > RC Test", loc[0]);
+}
+                        
                     userAreas.push({
                         qatest: loc[0],
                         qadetails: loc[1],
@@ -72,9 +95,26 @@ req.onreadystatechange = function() {
                  
                   print(userAreas[i].qatest + ": " + userAreas[i].qadetails);
                 }
-               print(userAreas[0].qatest + ": first one ");
-               print(userAreas[1].qatest + ": second one ");
                result_rc1 = userAreas[0].qadetails;
+               result_rc2 = userAreas[1].qadetails;
+               result_rc3 = userAreas[2].qadetails;
+               result_rc4 = userAreas[3].qadetails;
+               result_rc5 = userAreas[4].qadetails;
+               result_rc6 = userAreas[5].qadetails;
+               result_rc7 = userAreas[6].qadetails;
+               result_rc8 = userAreas[7].qadetails;
+               result_rc9 = userAreas[8].qadetails;
+               result_rc10 = userAreas[9].qadetails;
+               result_rc11 = userAreas[10].qadetails;
+               result_rc12 = userAreas[11].qadetails;
+               result_rc13 = userAreas[12].qadetails;
+               result_rc14 = userAreas[13].qadetails;
+               result_rc15 = userAreas[14].qadetails;
+               result_rc16 = userAreas[15].qadetails;
+               result_rc17 = userAreas[16].qadetails;
+               result_rc18 = userAreas[17].qadetails;
+               result_rc19 = userAreas[18].qadetails;
+               result_rc20 = userAreas[19].qadetails;
             }
         } else {
             print("Error loading data: " + req.status + " " + req.statusText + ", " + req.errorCode);
