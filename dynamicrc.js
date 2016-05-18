@@ -93,7 +93,6 @@ req.send();
 
 
 
-
 // Function to setup QA Test menu.
 function setupMenus(){
 	if(!Menu.menuExists("QA Test")){
@@ -221,6 +220,19 @@ function menuItemEvent(menuItem){
 		generateSmokeTestManualTestingReport();
 		Menu.setIsOptionChecked("Generate Smoke Test [CUT + PASTE RESULT]", false);
 	}
+	
+	
+	
+		if(Menu.isOptionChecked("Test 1")){
+		rctest1();
+		Menu.setIsOptionChecked("Test 1", false);
+	}
+	
+	
+	
+	
+	
+	
 	if(menuItem == "Generate Domain Stats Report [CUT + PASTE RESULT]"){
 		null;
 	}
@@ -467,6 +479,17 @@ function generateDomainStatsReport(){
 		webWindow.deleteLater();
 	});
 }
+
+function rctest1(){
+	additionalTestResultsObservations = Window.prompt("RC test 1");
+
+}
+
+
+
+
+
+
 
 // Function to generate HMD RC Manual Testing report.
 function generateHMDRCManualTestingReport(){
