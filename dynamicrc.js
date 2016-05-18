@@ -54,7 +54,6 @@ req.onreadystatechange = function() {
                     var loc = locations[i];
                     var x1 = loc[1],
                         x2 = loc[2],
-                        username: loc[0],
                         y1 = loc[3],
                         y2 = loc[4];
                     userAreas.push({
