@@ -60,7 +60,8 @@ req.onreadystatechange = function() {
                         y2 = loc[4];
                         menuParameters("QA Test > RC Test", loc[0]);
                     userAreas.push({
-                        username: loc[0],
+                        qatest: loc[0],
+                        qadetails: loc[1],
                        
                    
                     });
@@ -68,11 +69,11 @@ req.onreadystatechange = function() {
                 }
                 userAreas.sort(function(a, b) { return a.area > b.area ? -1 : (a.area < b.area ? 1 : 0) });
                 for (var i = 0; i < userAreas.length; i++) {
-                  //  menuParameters("QA Test > RC Test", loc[0]);
-                  print(userAreas[i].username + ": ");
+                 
+                  print(userAreas[i].qatest + ": " + userAreas[i].qadetails);
                 }
-               print(userAreas[0].username + ": first one ");
-               print(userAreas[1].username + ": second one ");
+               print(userAreas[0].qatest + ": first one ");
+               print(userAreas[1].qatest + ": second one ");
             }
         } else {
             print("Error loading data: " + req.status + " " + req.statusText + ", " + req.errorCode);
