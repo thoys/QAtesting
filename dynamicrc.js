@@ -53,6 +53,7 @@ req.onreadystatechange = function() {
                 Menu.addMenu("QA Test > RC Test");
                 for (var i = 0; i < locations.length; i++) {
                     var loc = locations[i];
+                    print(loc);
                     var x1 = loc[1],
                         x2 = loc[2],
                         y1 = loc[3],
