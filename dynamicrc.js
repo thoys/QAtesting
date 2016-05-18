@@ -482,7 +482,7 @@ function generateDomainStatsReport(){
 }
 
 function rctest1(){
-	additionalTestResultsObservations = Window.prompt(result_rc1);
+	additionalTestResultsObservations = Window.prompt("result_rc1");
 //	print(additionalTestResultsObservations);
 
 }
