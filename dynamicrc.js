@@ -260,6 +260,82 @@ function menuItemEvent(menuItem){
 		rctest1();
 		Menu.setIsOptionChecked("Test 1", false);
 	}
+		if(Menu.isOptionChecked("Test 2")){
+		rctest2();
+		Menu.setIsOptionChecked("Test 2", false);
+	}
+		if(Menu.isOptionChecked("Test 3")){
+		rctest3();
+		Menu.setIsOptionChecked("Test 3", false);
+	}
+		if(Menu.isOptionChecked("Test 4")){
+		rctest4();
+		Menu.setIsOptionChecked("Test 4", false);
+	}
+		if(Menu.isOptionChecked("Test 5")){
+		rctest5();
+		Menu.setIsOptionChecked("Test 5", false);
+	}
+		if(Menu.isOptionChecked("Test 6")){
+		rctest6();
+		Menu.setIsOptionChecked("Test 6", false);
+	}
+		if(Menu.isOptionChecked("Test 7")){
+		rctest7();
+		Menu.setIsOptionChecked("Test 7", false);
+	}
+		if(Menu.isOptionChecked("Test 8")){
+		rctest8();
+		Menu.setIsOptionChecked("Test 8", false);
+	}
+		if(Menu.isOptionChecked("Test 9")){
+		rctest9();
+		Menu.setIsOptionChecked("Test 9", false);
+	}
+		if(Menu.isOptionChecked("Test 10")){
+		rctest10();
+		Menu.setIsOptionChecked("Test 10", false);
+	}
+		if(Menu.isOptionChecked("Test 11")){
+		rctest11();
+		Menu.setIsOptionChecked("Test 11", false);
+	}
+		if(Menu.isOptionChecked("Test 12")){
+		rctest12();
+		Menu.setIsOptionChecked("Test 12", false);
+	}
+		if(Menu.isOptionChecked("Test 13")){
+		rctest13();
+		Menu.setIsOptionChecked("Test 13", false);
+	}
+		if(Menu.isOptionChecked("Test 14")){
+		rctest14();
+		Menu.setIsOptionChecked("Test 14", false);
+	}
+		if(Menu.isOptionChecked("Test 15")){
+		rctest15();
+		Menu.setIsOptionChecked("Test 15", false);
+	}
+		if(Menu.isOptionChecked("Test 16")){
+		rctest16();
+		Menu.setIsOptionChecked("Test 16", false);
+	}
+		if(Menu.isOptionChecked("Test 17")){
+		rctest17();
+		Menu.setIsOptionChecked("Test 17", false);
+	}
+		if(Menu.isOptionChecked("Test 18")){
+		rctest18();
+		Menu.setIsOptionChecked("Test 18", false);
+	}
+		if(Menu.isOptionChecked("Test 19")){
+		rctest19();
+		Menu.setIsOptionChecked("Test 19", false);
+	}
+		if(Menu.isOptionChecked("Test 20")){
+		rctest20();
+		Menu.setIsOptionChecked("Test 20", false);
+	}
 	
 	
 	
@@ -514,11 +590,126 @@ function generateDomainStatsReport(){
 }
 
 function rctest1(){
-	print("here")
-	additionalTestResultsObservations = Window.prompt(result_rc1);
-	print(additionalTestResultsObservations);
+
+	rctest1 = Window.prompt(result_rc1);
+	print(rctest1);
 
 }
+function rctest2(){
+
+	rctest2 = Window.prompt(result_rc2);
+
+
+}
+function rctest3(){
+
+	rctest3 = Window.prompt(result_rc3);
+	
+
+}
+function rctest4(){
+
+	rctest4 = Window.prompt(result_rc4);
+	
+
+}
+function rctest5(){
+
+	rctest5 = Window.prompt(result_rc5);
+	
+
+}
+function rctest6(){
+
+	rctest6 = Window.prompt(result_rc6);
+	
+
+}
+function rctest7(){
+
+	rctest7 = Window.prompt(result_rc7);
+	
+
+}
+function rctest8(){
+
+	rctest8 = Window.prompt(result_rc8);
+	
+
+}
+function rctest9(){
+
+	rctest9 = Window.prompt(result_rc9);
+
+
+}
+function rctest10(){
+
+	rctest10 = Window.prompt(result_rc0);
+	
+
+}
+function rctest11(){
+
+	rctest11 = Window.prompt(result_rc11);
+	
+
+}
+function rctest12(){
+
+	rctest12 = Window.prompt(result_rc12);
+	
+
+}
+function rctest13(){
+
+	rctest13 = Window.prompt(result_rc13);
+	
+
+}
+function rctest14(){
+
+	rctest14 = Window.prompt(result_rc14);
+	
+
+}
+function rctest15(){
+
+	rctest15 = Window.prompt(result_rc15);
+	
+
+}
+function rctest16(){
+
+	rctest16 = Window.prompt(result_rc16);
+	
+
+}
+function rctest17(){
+
+	rctest17 = Window.prompt(result_rc17);
+	
+
+}
+function rctest18(){
+
+	rctest18 = Window.prompt(result_rc18);
+	
+
+}
+function rctest19(){
+
+	rctest19 = Window.prompt(result_rc19);
+	
+
+}
+function rctest20(){
+
+	rctest20 = Window.prompt(result_rc20);
+
+
+}
+
 
 
 
