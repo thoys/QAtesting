@@ -20,7 +20,7 @@ const playaPerformanceTestScript = "https://raw.githubusercontent.com/highfideli
 
 // Create global variables.
 var additionalTestResultsObservations;
-
+var result_rc1;
 // Function to set up menu params.
 function menuParameters(menuNameSelection, menuItemNameSelection){
 	Menu.addMenuItem({ 
