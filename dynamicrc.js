@@ -225,7 +225,7 @@ function menuItemEvent(menuItem){
 	
 	
 		if(Menu.isOptionChecked("Test 1")){
-		rctest1();
+		rctest1(result_rc1);
 		Menu.setIsOptionChecked("Test 1", false);
 	}
 	
@@ -483,7 +483,7 @@ function generateDomainStatsReport(){
 
 function rctest1(){
 	additionalTestResultsObservations = Window.prompt(result_rc1);
-	print(additionalTestResultsObservations);
+//	print(additionalTestResultsObservations);
 
 }
 
