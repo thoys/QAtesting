@@ -56,6 +56,7 @@ req.onreadystatechange = function() {
                         x2 = loc[2],
                         y1 = loc[3],
                         y2 = loc[4];
+                        menuParameters("QA Test > RC Test", loc[0]);
                     userAreas.push({
                         username: loc[0],
                        
@@ -67,7 +68,7 @@ req.onreadystatechange = function() {
                 for (var i = 0; i < userAreas.length; i++) {
                     menuParameters("QA Test > RC Test", loc[0]);
                 }
-                locationMenu.updateMenu(userAreas);
+               
             }
         } else {
             print("Error loading data: " + req.status + " " + req.statusText + ", " + req.errorCode);
