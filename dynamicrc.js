@@ -482,7 +482,8 @@ function generateDomainStatsReport(){
 }
 
 function rctest1(){
-	additionalTestResultsObservations = Window.prompt(userAreas[0].qadetails);
+	print("here")
+	additionalTestResultsObservations = Window.prompt(result_rc1);
 	print(additionalTestResultsObservations);
 
 }
