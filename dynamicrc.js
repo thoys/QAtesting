@@ -59,9 +59,10 @@ req.onreadystatechange = function() {
                         y2 = loc[4];
                     userAreas.push({
                         username: loc[0],
-                        menuParameters("QA Test > RC Test", loc[0]);
+                       
                    
                     });
+                     menuParameters("QA Test > RC Test", loc[0]);
                 }
                 userAreas.sort(function(a, b) { return a.area > b.area ? -1 : (a.area < b.area ? 1 : 0) });
                 for (var i = 0; i < userAreas.length; i++) {
