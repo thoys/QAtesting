@@ -93,6 +93,8 @@ menuParameters("QA Test > RC Test","Generate RC Results [CUT + PASTE RESULT]");
 
         }
 
+
+menuParameters("QA Test > RC Test","Generate RC Results [CUT + PASTE RESULT]");
         result_rc1 = userAreas[0].qadetails;
         result_rc2 = userAreas[1].qadetails;
         result_rc3 = userAreas[2].qadetails;
