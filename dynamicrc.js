@@ -54,19 +54,18 @@ req.onreadystatechange = function() {
                     var loc = locations[i];
                     var x1 = loc[1],
                         x2 = loc[2],
+                        username: loc[0],
                         y1 = loc[3],
                         y2 = loc[4];
                     userAreas.push({
                         username: loc[0],
-                        x: x1,
-                        y: 300,
-                        z: y1,
-                        area: Math.abs(x2 - x1) * Math.abs(y2 - y1),
+                        menuParameters("QA Test > RC Test", loc[0]);
+                   
                     });
                 }
                 userAreas.sort(function(a, b) { return a.area > b.area ? -1 : (a.area < b.area ? 1 : 0) });
                 for (var i = 0; i < userAreas.length; i++) {
-                    print(userAreas[i].username + ": " + userAreas[i].location);
+                    print(userAreas[i].username);
                 }
                 locationMenu.updateMenu(userAreas);
             }
