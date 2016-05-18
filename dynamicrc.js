@@ -74,7 +74,7 @@ req.onreadystatechange = function() {
                 }
                print(userAreas[0].qatest + ": first one ");
                print(userAreas[1].qatest + ": second one ");
-               var result_rc1 = userAreas[0].qadetails;
+               result_rc1 = userAreas[0].qadetails;
             }
         } else {
             print("Error loading data: " + req.status + " " + req.statusText + ", " + req.errorCode);
