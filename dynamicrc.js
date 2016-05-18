@@ -73,11 +73,7 @@ req.onreadystatechange = function() {
                 Menu.addMenu("QA Test > RC Test");
                 for (var i = 0; i < locations.length; i++) {
                     var loc = locations[i];
-                    print(loc);
-                    var x1 = loc[1],
-                        x2 = loc[2],
-                        y1 = loc[3],
-                        y2 = loc[4];
+                   
                         if (loc[1] != ""){
     menuParameters("QA Test > RC Test", loc[0]);
 }
@@ -90,11 +86,7 @@ req.onreadystatechange = function() {
                     });
                      
                 }
-                userAreas.sort(function(a, b) { return a.area > b.area ? -1 : (a.area < b.area ? 1 : 0) });
-                for (var i = 0; i < userAreas.length; i++) {
-                 
-                  print(userAreas[i].qatest + ": " + userAreas[i].qadetails);
-                }
+              
                result_rc1 = userAreas[0].qadetails;
                result_rc2 = userAreas[1].qadetails;
                result_rc3 = userAreas[2].qadetails;
