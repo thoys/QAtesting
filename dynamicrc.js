@@ -43,6 +43,46 @@ var result_rc19;
 var result_rc20;
 
 var rctest1;
+var rctest2;
+var rctest3;
+var rctest4;
+var rctest5;
+var rctest6;
+var rctest7;
+var rctest8;
+var rctest9;
+var rctest10;
+var rctest11;
+var rctest12;
+var rctest13;
+var rctest14;
+var rctest15;
+var rctest16;
+var rctest17;
+var rctest18;
+var rctest19;
+var rctest20;
+
+var rctestdone1;
+var rctestdone2;
+var rctestdone3;
+var rctestdone4;
+var rctestdone5;
+var rctestdone6;
+var rctestdone7;
+var rctestdone8;
+var rctestdone9;
+var rctestdone10;
+var rctestdone11;
+var rctestdone12;
+var rctestdone13;
+var rctestdone14;
+var rctestdone15;
+var rctestdone16;
+var rctestdone17;
+var rctestdone18;
+var rctestdone19;
+var rctestdone20;
 
 
 
@@ -268,85 +308,130 @@ function menuItemEvent(menuItem) {
   }
 
   if (Menu.isOptionChecked("Test 1")) {
-    rctest1();
-    Menu.setIsOptionChecked("Test 1", true);
+    if (rctestdone1 !=1) {
+    rctest1_prompt();
+}
+    rctestdone1 = 1;
   }
   if (Menu.isOptionChecked("Test 2")) {
-    rctest2();
-    Menu.setIsOptionChecked("Test 2", false);
+    if (rctestdone2 !=1) {
+    rctest2_prompt();
+    }
+    rctestdone2 = 1;
   }
   if (Menu.isOptionChecked("Test 3")) {
-    rctest3();
-    Menu.setIsOptionChecked("Test 3", false);
+    if (rctestdone3 !=1) {
+    rctest3_prompt();
+}
+    rctestdone3 = 1;
   }
   if (Menu.isOptionChecked("Test 4")) {
-    rctest4();
-    Menu.setIsOptionChecked("Test 4", false);
+    if (rctestdone4 !=1) {
+    rctest4_prompt();
+}
+    rctestdone4 = 1;
   }
   if (Menu.isOptionChecked("Test 5")) {
-    rctest5();
-    Menu.setIsOptionChecked("Test 5", false);
+    if (rctestdone5 !=1) {
+    rctest5_prompt();
+}
+    rctestdone5 = 1;
   }
   if (Menu.isOptionChecked("Test 6")) {
-    rctest6();
-    Menu.setIsOptionChecked("Test 6", false);
+    if (rctestdone6 !=1) {
+    rctest6_prompt();
+}
+    rctestdone6 = 1;
   }
   if (Menu.isOptionChecked("Test 7")) {
-    rctest7();
-    Menu.setIsOptionChecked("Test 7", false);
+    if (rctestdone7 !=1) {
+    rctest7_prompt();
+}
+    rctestdone7 = 1;
   }
   if (Menu.isOptionChecked("Test 8")) {
-    rctest8();
-    Menu.setIsOptionChecked("Test 8", false);
+    if (rctestdone8 !=1) {
+    rctest8_prompt();
+}
+    rctestdone8 = 1;
   }
   if (Menu.isOptionChecked("Test 9")) {
-    rctest9();
-    Menu.setIsOptionChecked("Test 9", false);
+    if (rctestdone9 !=1) {
+    rctest9_prompt();
+}
+    rctestdone9 = 1;
   }
   if (Menu.isOptionChecked("Test 10")) {
-    rctest10();
-    Menu.setIsOptionChecked("Test 10", false);
+    if (rctestdone10 !=1) {
+    rctest10_prompt();
+}
+    rctestdone10 = 1;
   }
   if (Menu.isOptionChecked("Test 11")) {
-    rctest11();
-    Menu.setIsOptionChecked("Test 11", false);
+    if (rctestdone11 !=1) {
+    rctest11_prompt();
+}
+    rctestdone11 = 1;
   }
   if (Menu.isOptionChecked("Test 12")) {
-    rctest12();
-    Menu.setIsOptionChecked("Test 12", false);
+    if (rctestdone12 !=1) {
+    rctest12_prompt();
+}
+    rctestdone12 = 1;
   }
   if (Menu.isOptionChecked("Test 13")) {
-    rctest13();
-    Menu.setIsOptionChecked("Test 13", false);
+    if (rctestdone13 !=1) {
+    rctest13_prompt();
+}
+    rctestdone13 = 1;
   }
   if (Menu.isOptionChecked("Test 14")) {
-    rctest14();
-    Menu.setIsOptionChecked("Test 14", false);
+    if (rctestdone14 !=1) {
+    rctest14_prompt();
+}
+    rctestdone14 = 1;
   }
   if (Menu.isOptionChecked("Test 15")) {
-    rctest15();
-    Menu.setIsOptionChecked("Test 15", false);
+    if (rctestdone15 !=1) {
+    rctest15_prompt();
+}
+    rctestdone15 = 1;
   }
   if (Menu.isOptionChecked("Test 16")) {
-    rctest16();
-    Menu.setIsOptionChecked("Test 16", false);
+    if (rctestdone16 !=1) {
+    rctest16_prompt();
+}
+    rctestdone16 = 1;
   }
   if (Menu.isOptionChecked("Test 17")) {
-    rctest17();
-    Menu.setIsOptionChecked("Test 17", false);
+    if (rctestdone17 !=1) {
+    rctest17_prompt();
+}
+    rctestdone17 = 1;
   }
   if (Menu.isOptionChecked("Test 18")) {
-    rctest18();
-    Menu.setIsOptionChecked("Test 18", false);
+    if (rctestdone18 !=1) {
+    rctest18_prompt();
+}
+    rctestdone18 = 1;
   }
   if (Menu.isOptionChecked("Test 19")) {
-    rctest19();
-    Menu.setIsOptionChecked("Test 19", false);
+    if (rctestdone19 !=1) {
+    rctest19_prompt();
+}
+    rctestdone19 = 1;
   }
   if (Menu.isOptionChecked("Test 20")) {
-    rctest20();
-    Menu.setIsOptionChecked("Test 20", false);
+    if (rctestdone20 !=1) {
+    rctest20_prompt();
+}
+    rctestdone20 = 1;
   }
+
+
+
+
+
 
 
 
@@ -437,51 +522,106 @@ function rcresults() {
     MyStats.getUsername = Account.getUsername();
     print("I am here ")
     if (Menu.isOptionChecked("Test 1")) {
-      print("yes item was checked")
-      MyStats.createTestBlocks = "**" + result_rc1 + "**" + rctest1;
+      MyStats.test1 = "**Test 1**|" + result_rc1 + "|" + rctest1;
     } else {
-      MyStats.createTestBlocks = "**localhost 'createTestBlocks.js'** FAILURE";
+      
     }
-    if (Menu.isOptionChecked("localhost ATP Upload + Add To World + Move Around + Delete - SUCCESS")) {
-      MyStats.atpUploadEdit = "**localhost ATP** SUCCESS";
+     if (Menu.isOptionChecked("Test 2")) {
+      MyStats.test2 = "**Test 2**|" + result_rc2 + "|" + rctest2;
     } else {
-      MyStats.atpUploadEdit = "**localhost ATP** FAILURE";
+      
     }
-    if (Menu.isOptionChecked("Echo Server Audio - SUCCESS")) {
-      MyStats.echoServerAudio = "**Echo Server Audio** SUCCESS";
+     if (Menu.isOptionChecked("Test 3")) {
+      MyStats.test3 = "**Test 3**|" + result_rc3 + "|" + rctest3;
     } else {
-      MyStats.echoServerAudio = "**Echo Server Audio** FAILURE";
+      
     }
-    if (Menu.isOptionChecked("localhost 'harmonicOscillator.js' - SUCCESS")) {
-      MyStats.harmonicOscillator = "**localhost 'harmonicOscillator.js'** SUCCESS";
+     if (Menu.isOptionChecked("Test 4")) {
+      MyStats.test4 = "**Test 4**|" + result_rc4 + "|" + rctest4;
     } else {
-      MyStats.harmonicOscillator = "**localhost 'harmonicOscillator.js'** FAILURE";
+      
     }
-    if (Menu.isOptionChecked("localhost 'reverbTest.js' + Adjust Wet And Dry Levels - SUCCESS")) {
-      MyStats.reverbTest = "**localhost 'reverbTest.js'** SUCCESS";
+     if (Menu.isOptionChecked("Test 5")) {
+      MyStats.test5 = "**Test 5**|" + result_rc5 + "|" + rctest5;
     } else {
-      MyStats.reverbTest = "**localhost 'reverbTest.js'** FAILURE";
+      
     }
-    if (Menu.isOptionChecked("localhost 'playaPerformanceTest.js' + Type 'localhost' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS")) {
-      MyStats.localhostPlayaPerformanceTest = "**localhost 'playaPerformanceTest.js'** SUCCESS";
+     if (Menu.isOptionChecked("Test 6")) {
+      MyStats.test6 = "**Test 6**|" + result_rc6 + "|" + rctest6;
     } else {
-      MyStats.localhostPlayaPerformanceTest = "**localhost 'playaPerformanceTest.js'** FAILURE";
+      
     }
-    if (Menu.isOptionChecked("playa 'playaPerformanceTest.js' + Type 'playa' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS")) {
-      MyStats.playaPlayaPerformanceTest = "**playa 'playaPerformanceTest.js'** SUCCESS";
+     if (Menu.isOptionChecked("Test 7")) {
+      MyStats.test7 = "**Test 7**|" + result_rc7 + "|" + rctest7;
     } else {
-      MyStats.playaPlayaPerformanceTest = "**playa 'playaPerformanceTest.js'** FAILURE";
+      
     }
-    if (Menu.isOptionChecked("cellscience 'playaPerformanceTest.js' + Type 'cellscience' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS")) {
-      MyStats.cellsciencePlayaPerformanceTest = "**cellscience 'playaPerformanceTest.js'** SUCCESS";
+     if (Menu.isOptionChecked("Test 8")) {
+      MyStats.test8 = "**Test 8**|" + result_rc8 + "|" + rctest8;
     } else {
-      MyStats.cellsciencePlayaPerformanceTest = "**cellscience 'playaPerformanceTest.js'** FAILURE";
+      
     }
-    if (Menu.isOptionChecked("Smoke Test QA Pass - SUCCESS")) {
-      MyStats.smokeTestQAPass = "**QA Pass** SUCCESS";
+     if (Menu.isOptionChecked("Test 9")) {
+      MyStats.test9 = "**Test 9**|" + result_rc9 + "|" + rctest9;
     } else {
-      MyStats.smokeTestQAPass = "**QA Pass** FAILURE";
+      
     }
+     if (Menu.isOptionChecked("Test 10")) {
+      MyStats.test10 = "**Test 10**|" + result_rc10 + "|" + rctest10;
+    } else {
+      
+    }
+     if (Menu.isOptionChecked("Test 11")) {
+      MyStats.test11 = "**Test 11**|" + result_rc11 + "|" + rctest11;
+    } else {
+      
+    }
+     if (Menu.isOptionChecked("Test 12")) {
+      MyStats.test12 = "**Test 12**|" + result_rc12 + "|" + rctest12;
+    } else {
+      
+    }
+     if (Menu.isOptionChecked("Test 13")) {
+      MyStats.test13 = "**Test 13**|" + result_rc13 + "|" + rctest13;
+    } else {
+      
+    }
+     if (Menu.isOptionChecked("Test 14")) {
+      MyStats.test14 = "**Test 14**|" + result_rc14 + "|" + rctest14;
+    } else {
+      
+    }
+     if (Menu.isOptionChecked("Test 15")) {
+      MyStats.test15 = "**Test 15**|" + result_rc15 + "|" + rctest15;
+    } else {
+      
+    }
+     if (Menu.isOptionChecked("Test 16")) {
+      MyStats.test16 = "**Test 16**|" + result_rc16 + "|" + rctest16;
+    } else {
+      
+    }
+     if (Menu.isOptionChecked("Test 17")) {
+      MyStats.test17 = "**Test 17**|" + result_rc17 + "|" + rctest17;
+    } else {
+      
+    }
+     if (Menu.isOptionChecked("Test 18")) {
+      MyStats.test18 = "**Test 18**|" + result_rc18 + "|" + rctest18;
+    } else {
+      
+    }
+     if (Menu.isOptionChecked("Test 19")) {
+      MyStats.test19 = "**Test 19**|" + result_rc19 + "|" + rctest19;
+    } else {
+      
+    }
+     if (Menu.isOptionChecked("Test 20")) {
+      MyStats.test20 = "**Test 20**|" + result_rc20 + "|" + rctest20;
+    } else {
+      
+    }
+    
 
     MyStats.additionalTestResultsObservations = additionalTestResultsObservations;
     var message = JSON.stringify(MyStats);
@@ -692,140 +832,140 @@ function generateDomainStatsReport() {
   });
 }
 
-function rctest1() {
+function rctest1_prompt() {
 
   rctest1 = Window.prompt(result_rc1);
   print(rctest1);
 
 }
 
-function rctest2() {
+function rctest2_prompt() {
 
   rctest2 = Window.prompt(result_rc2);
 
 
 }
 
-function rctest3() {
+function rctest3_prompt() {
 
   rctest3 = Window.prompt(result_rc3);
 
 
 }
 
-function rctest4() {
+function rctest4_prompt() {
 
   rctest4 = Window.prompt(result_rc4);
 
 
 }
 
-function rctest5() {
+function rctest5_prompt() {
 
   rctest5 = Window.prompt(result_rc5);
 
 
 }
 
-function rctest6() {
+function rctest6_prompt() {
 
   rctest6 = Window.prompt(result_rc6);
 
 
 }
 
-function rctest7() {
+function rctest7_prompt() {
 
   rctest7 = Window.prompt(result_rc7);
 
 
 }
 
-function rctest8() {
+function rctest8_prompt() {
 
   rctest8 = Window.prompt(result_rc8);
 
 
 }
 
-function rctest9() {
+function rctest9_prompt() {
 
   rctest9 = Window.prompt(result_rc9);
 
 
 }
 
-function rctest10() {
+function rctest10_prompt() {
 
   rctest10 = Window.prompt(result_rc0);
 
 
 }
 
-function rctest11() {
+function rctest11_prompt() {
 
   rctest11 = Window.prompt(result_rc11);
 
 
 }
 
-function rctest12() {
+function rctest12_prompt() {
 
   rctest12 = Window.prompt(result_rc12);
 
 
 }
 
-function rctest13() {
+function rctest13_prompt() {
 
   rctest13 = Window.prompt(result_rc13);
 
 
 }
 
-function rctest14() {
+function rctest14_prompt() {
 
   rctest14 = Window.prompt(result_rc14);
 
 
 }
 
-function rctest15() {
+function rctest15_prompt() {
 
   rctest15 = Window.prompt(result_rc15);
 
 
 }
 
-function rctest16() {
+function rctest16_prompt() {
 
   rctest16 = Window.prompt(result_rc16);
 
 
 }
 
-function rctest17() {
+function rctest17_prompt() {
 
   rctest17 = Window.prompt(result_rc17);
 
 
 }
 
-function rctest18() {
+function rctest18_prompt() {
 
   rctest18 = Window.prompt(result_rc18);
 
 
 }
 
-function rctest19() {
+function rctest19_prompt() {
 
   rctest19 = Window.prompt(result_rc19);
 
 
 }
 
-function rctest20() {
+function rctest20_prompt() {
 
   rctest20 = Window.prompt(result_rc20);
 
