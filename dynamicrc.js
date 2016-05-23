@@ -133,7 +133,7 @@ req.onreadystatechange = function() {
         }
 
 
-menuParameters("QA Test > RC Test","Generate RC Results [CUT + PASTE RESULT]");
+        menuParameters("QA Test > RC Test", "Generate RC Results [CUT + PASTE RESULT]");
         result_rc1 = userAreas[0].qadetails;
         result_rc2 = userAreas[1].qadetails;
         result_rc3 = userAreas[2].qadetails;
@@ -301,131 +301,171 @@ function menuItemEvent(menuItem) {
     Menu.setIsOptionChecked("Generate Smoke Test [CUT + PASTE RESULT]", false);
   }
 
- if (Menu.isOptionChecked("Generate RC Results [CUT + PASTE RESULT]")) {
-   
+  if (Menu.isOptionChecked("Generate RC Results [CUT + PASTE RESULT]")) {
+
     rcresults();
     Menu.setIsOptionChecked("Generate RC Results [CUT + PASTE RESULT]", false);
   }
 
   if (Menu.isOptionChecked("Test 1")) {
-    if (rctestdone1 !=1) {
-    rctest1_prompt();
-}
+    if (rctestdone1 != 1) {
+      rctest1_prompt();
+    }
     rctestdone1 = 1;
+  } else {
+    rctestdone1 = 0;
   }
   if (Menu.isOptionChecked("Test 2")) {
-    if (rctestdone2 !=1) {
-    rctest2_prompt();
+    if (rctestdone2 != 1) {
+      rctest2_prompt();
     }
     rctestdone2 = 1;
+  } else {
+    rctestdone2 = 0;
   }
   if (Menu.isOptionChecked("Test 3")) {
-    if (rctestdone3 !=1) {
-    rctest3_prompt();
-}
+    if (rctestdone3 != 1) {
+      rctest3_prompt();
+    }
     rctestdone3 = 1;
+  } else {
+    rctestdone3 = 0;
   }
   if (Menu.isOptionChecked("Test 4")) {
-    if (rctestdone4 !=1) {
-    rctest4_prompt();
-}
+    if (rctestdone4 != 1) {
+      rctest4_prompt();
+    }
     rctestdone4 = 1;
+  } else {
+    rctestdone4 = 0;
   }
   if (Menu.isOptionChecked("Test 5")) {
-    if (rctestdone5 !=1) {
-    rctest5_prompt();
-}
+    if (rctestdone5 != 1) {
+      rctest5_prompt();
+    }
     rctestdone5 = 1;
+  } else {
+    rctestdone5 = 0;
   }
   if (Menu.isOptionChecked("Test 6")) {
-    if (rctestdone6 !=1) {
-    rctest6_prompt();
-}
+    if (rctestdone6 != 1) {
+      rctest6_prompt();
+    }
     rctestdone6 = 1;
+  } else {
+    rctestdone6 = 0;
   }
   if (Menu.isOptionChecked("Test 7")) {
-    if (rctestdone7 !=1) {
-    rctest7_prompt();
-}
+    if (rctestdone7 != 1) {
+      rctest7_prompt();
+    }
     rctestdone7 = 1;
+  } else {
+    rctestdone7 = 0;
   }
   if (Menu.isOptionChecked("Test 8")) {
-    if (rctestdone8 !=1) {
-    rctest8_prompt();
-}
+    if (rctestdone8 != 1) {
+      rctest8_prompt();
+    }
     rctestdone8 = 1;
+  } else {
+    rctestdone8 = 0;
   }
   if (Menu.isOptionChecked("Test 9")) {
-    if (rctestdone9 !=1) {
-    rctest9_prompt();
-}
+    if (rctestdone9 != 1) {
+      rctest9_prompt();
+    }
     rctestdone9 = 1;
+  } else {
+    rctestdone9 = 0;
   }
   if (Menu.isOptionChecked("Test 10")) {
-    if (rctestdone10 !=1) {
-    rctest10_prompt();
-}
+    if (rctestdone10 != 1) {
+      rctest10_prompt();
+    }
     rctestdone10 = 1;
+  } else {
+    rctestdone10 = 0;
   }
   if (Menu.isOptionChecked("Test 11")) {
-    if (rctestdone11 !=1) {
-    rctest11_prompt();
-}
+    if (rctestdone11 != 1) {
+      rctest11_prompt();
+    }
     rctestdone11 = 1;
+  } else {
+    rctestdone11 = 0;
   }
   if (Menu.isOptionChecked("Test 12")) {
-    if (rctestdone12 !=1) {
-    rctest12_prompt();
-}
+    if (rctestdone12 != 1) {
+      rctest12_prompt();
+    }
     rctestdone12 = 1;
+  } else {
+    rctestdone12 = 0;
   }
   if (Menu.isOptionChecked("Test 13")) {
-    if (rctestdone13 !=1) {
-    rctest13_prompt();
-}
+    if (rctestdone13 != 1) {
+      rctest13_prompt();
+    }
     rctestdone13 = 1;
+  } else {
+    rctestdone13 = 0;
   }
   if (Menu.isOptionChecked("Test 14")) {
-    if (rctestdone14 !=1) {
-    rctest14_prompt();
-}
+    if (rctestdone14 != 1) {
+      rctest14_prompt();
+    }
     rctestdone14 = 1;
+  } else {
+    rctestdone14 = 0;
   }
   if (Menu.isOptionChecked("Test 15")) {
-    if (rctestdone15 !=1) {
-    rctest15_prompt();
-}
+    if (rctestdone15 != 1) {
+      rctest15_prompt();
+    }
     rctestdone15 = 1;
+  } else {
+    rctestdone15 = 0;
   }
   if (Menu.isOptionChecked("Test 16")) {
-    if (rctestdone16 !=1) {
-    rctest16_prompt();
-}
+    if (rctestdone16 != 1) {
+      rctest16_prompt();
+    }
     rctestdone16 = 1;
+  } else {
+    rctestdone16 = 0;
   }
   if (Menu.isOptionChecked("Test 17")) {
-    if (rctestdone17 !=1) {
-    rctest17_prompt();
-}
+    if (rctestdone17 != 1) {
+      rctest17_prompt();
+    }
     rctestdone17 = 1;
+  } else {
+    rctestdone17 = 0;
   }
   if (Menu.isOptionChecked("Test 18")) {
-    if (rctestdone18 !=1) {
-    rctest18_prompt();
-}
+    if (rctestdone18 != 1) {
+      rctest18_prompt();
+    }
     rctestdone18 = 1;
+  } else {
+    rctestdone18 = 0;
   }
   if (Menu.isOptionChecked("Test 19")) {
-    if (rctestdone19 !=1) {
-    rctest19_prompt();
-}
+    if (rctestdone19 != 1) {
+      rctest19_prompt();
+    }
     rctestdone19 = 1;
+  } else {
+    rctestdone19 = 0;
   }
   if (Menu.isOptionChecked("Test 20")) {
-    if (rctestdone20 !=1) {
-    rctest20_prompt();
-}
+    if (rctestdone20 != 1) {
+      rctest20_prompt();
+    }
     rctestdone20 = 1;
+  } else {
+    rctestdone20 = 0;
   }
 
 
@@ -524,104 +564,104 @@ function rcresults() {
     if (Menu.isOptionChecked("Test 1")) {
       MyStats.test1 = "**Test 1**|" + result_rc1 + "|" + rctest1;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 2")) {
+    if (Menu.isOptionChecked("Test 2")) {
       MyStats.test2 = "**Test 2**|" + result_rc2 + "|" + rctest2;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 3")) {
+    if (Menu.isOptionChecked("Test 3")) {
       MyStats.test3 = "**Test 3**|" + result_rc3 + "|" + rctest3;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 4")) {
+    if (Menu.isOptionChecked("Test 4")) {
       MyStats.test4 = "**Test 4**|" + result_rc4 + "|" + rctest4;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 5")) {
+    if (Menu.isOptionChecked("Test 5")) {
       MyStats.test5 = "**Test 5**|" + result_rc5 + "|" + rctest5;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 6")) {
+    if (Menu.isOptionChecked("Test 6")) {
       MyStats.test6 = "**Test 6**|" + result_rc6 + "|" + rctest6;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 7")) {
+    if (Menu.isOptionChecked("Test 7")) {
       MyStats.test7 = "**Test 7**|" + result_rc7 + "|" + rctest7;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 8")) {
+    if (Menu.isOptionChecked("Test 8")) {
       MyStats.test8 = "**Test 8**|" + result_rc8 + "|" + rctest8;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 9")) {
+    if (Menu.isOptionChecked("Test 9")) {
       MyStats.test9 = "**Test 9**|" + result_rc9 + "|" + rctest9;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 10")) {
+    if (Menu.isOptionChecked("Test 10")) {
       MyStats.test10 = "**Test 10**|" + result_rc10 + "|" + rctest10;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 11")) {
+    if (Menu.isOptionChecked("Test 11")) {
       MyStats.test11 = "**Test 11**|" + result_rc11 + "|" + rctest11;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 12")) {
+    if (Menu.isOptionChecked("Test 12")) {
       MyStats.test12 = "**Test 12**|" + result_rc12 + "|" + rctest12;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 13")) {
+    if (Menu.isOptionChecked("Test 13")) {
       MyStats.test13 = "**Test 13**|" + result_rc13 + "|" + rctest13;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 14")) {
+    if (Menu.isOptionChecked("Test 14")) {
       MyStats.test14 = "**Test 14**|" + result_rc14 + "|" + rctest14;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 15")) {
+    if (Menu.isOptionChecked("Test 15")) {
       MyStats.test15 = "**Test 15**|" + result_rc15 + "|" + rctest15;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 16")) {
+    if (Menu.isOptionChecked("Test 16")) {
       MyStats.test16 = "**Test 16**|" + result_rc16 + "|" + rctest16;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 17")) {
+    if (Menu.isOptionChecked("Test 17")) {
       MyStats.test17 = "**Test 17**|" + result_rc17 + "|" + rctest17;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 18")) {
+    if (Menu.isOptionChecked("Test 18")) {
       MyStats.test18 = "**Test 18**|" + result_rc18 + "|" + rctest18;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 19")) {
+    if (Menu.isOptionChecked("Test 19")) {
       MyStats.test19 = "**Test 19**|" + result_rc19 + "|" + rctest19;
     } else {
-      
+
     }
-     if (Menu.isOptionChecked("Test 20")) {
+    if (Menu.isOptionChecked("Test 20")) {
       MyStats.test20 = "**Test 20**|" + result_rc20 + "|" + rctest20;
     } else {
-      
+
     }
-    
+
 
     MyStats.additionalTestResultsObservations = additionalTestResultsObservations;
     var message = JSON.stringify(MyStats);
