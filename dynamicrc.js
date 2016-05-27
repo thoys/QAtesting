@@ -801,7 +801,7 @@ function generateDomainStatsReport() {
       MyStats.timingTranslucents = Render.getConfig("DrawTransparentDeferred").cpuRunTime;
       MyStats.timingLighting = Render.getConfig("RenderDeferred").cpuRunTime;
       MyStats.renderFrame = Render.getConfig("RenderDeferredTask").cpuRunTime;
-    } else if (Window.location.hostname == "Playa") {
+    } else if (Window.location.hostname == "dev-playa") {
       MyStats.domainInfo_playa = Window.location.hostname;
       MyStats.renderRate_playa = Math.round(Stats.renderrate);
       MyStats.presentRate_playa = Math.round(Stats.presentrate);
@@ -830,7 +830,7 @@ function generateDomainStatsReport() {
       MyStats.timingTranslucents_playa = Render.getConfig("DrawTransparentDeferred").cpuRunTime;
       MyStats.timingLighting_playa = Render.getConfig("RenderDeferred").cpuRunTime;
       MyStats.renderFrame_playa = Render.getConfig("RenderDeferredTask").cpuRunTime;
-    } else if (Window.location.hostname == "cellscience") {
+    } else if (Window.location.hostname == "dev-demo") {
       MyStats.domainInfo_cellscience = Window.location.hostname;
       MyStats.renderRate_cellscience = Math.round(Stats.renderrate);
       MyStats.presentRate_cellscience = Math.round(Stats.presentrate);
