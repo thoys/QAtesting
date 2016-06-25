@@ -266,14 +266,14 @@ function generateSmokeTestManualTestingReport(){
 			MyStats.localhostPlayaPerformanceTest = "**localhost 'playaPerformanceTest.js'** FAILURE";
 		}
 		if(Menu.isOptionChecked("playa 'playaPerformanceTest.js' + Type 'playa' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS")){
-			MyStats.playaPlayaPerformanceTest = "**playa 'playaPerformanceTest.js'** SUCCESS";
+			MyStats.playaPlayaPerformanceTest = "**dev-playa 'playaPerformanceTest.js'** SUCCESS";
 		} else{
-			MyStats.playaPlayaPerformanceTest = "**playa 'playaPerformanceTest.js'** FAILURE";
+			MyStats.playaPlayaPerformanceTest = "**dev-playa 'playaPerformanceTest.js'** FAILURE";
 		}
 		if(Menu.isOptionChecked("cellscience 'playaPerformanceTest.js' + Type 'cellscience' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS")){
-			MyStats.cellsciencePlayaPerformanceTest = "**cellscience 'playaPerformanceTest.js'** SUCCESS";
+			MyStats.cellsciencePlayaPerformanceTest = "**dev-demo 'playaPerformanceTest.js'** SUCCESS";
 		} else{
-			MyStats.cellsciencePlayaPerformanceTest = "**cellscience 'playaPerformanceTest.js'** FAILURE";
+			MyStats.cellsciencePlayaPerformanceTest = "**dev-demo 'playaPerformanceTest.js'** FAILURE";
 		}
 		if(Menu.isOptionChecked("Smoke Test QA Pass - SUCCESS")){
 			MyStats.smokeTestQAPass = "**QA Pass** SUCCESS";
