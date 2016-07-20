@@ -197,8 +197,8 @@ function setupMenus() {
     menuParameters("QA Test > Smoke Test", "LOAD 'playaPerformanceTest.js'");
     menuParameters("QA Test > Smoke Test", "UNLOAD 'playaPerformanceTest.js'");
     menuParameters("QA Test > Smoke Test", "localhost 'playaPerformanceTest.js' + Type 'localhost' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS");
-    menuParameters("QA Test > Smoke Test", "playa 'playaPerformanceTest.js' + Type 'playa' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS");
-    menuParameters("QA Test > Smoke Test", "cellscience 'playaPerformanceTest.js' + Type 'cellscience' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS");
+    menuParameters("QA Test > Smoke Test", "playa 'playaPerformanceTest.js' + Type 'dev-playa' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS");
+    menuParameters("QA Test > Smoke Test", "cellscience 'playaPerformanceTest.js' + Type 'dev-demo' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS");
     menuParameters("QA Test > Smoke Test", "Smoke Test QA Pass - SUCCESS");
     menuParameters("QA Test > Smoke Test", "Generate Smoke Test [CUT + PASTE RESULT]");
     menuParameters("QA Test > Smoke Test", "Generate Domain Stats Report [CUT + PASTE RESULT]");
@@ -732,15 +732,15 @@ function generateSmokeTestManualTestingReport() {
     } else {
       MyStats.localhostPlayaPerformanceTest = "**localhost 'playaPerformanceTest.js'** FAILURE";
     }
-    if (Menu.isOptionChecked("playa 'playaPerformanceTest.js' + Type 'playa' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS")) {
+    if (Menu.isOptionChecked("playa 'playaPerformanceTest.js' + Type 'dev-playa' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS")) {
       MyStats.playaPlayaPerformanceTest = "**playa 'playaPerformanceTest.js'** SUCCESS";
     } else {
       MyStats.playaPlayaPerformanceTest = "**playa 'playaPerformanceTest.js'** FAILURE";
     }
-    if (Menu.isOptionChecked("cellscience 'playaPerformanceTest.js' + Type 'cellscience' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS")) {
-      MyStats.cellsciencePlayaPerformanceTest = "**cellscience 'playaPerformanceTest.js'** SUCCESS";
+    if (Menu.isOptionChecked("cellscience 'playaPerformanceTest.js' + Type 'dev-demo' In Box + Click RUN Until DISCONNECT Then Click STOP + If Graph Results Under RED Line - SUCCESS")) {
+      MyStats.cellsciencePlayaPerformanceTest = "**dev-demo 'playaPerformanceTest.js'** SUCCESS";
     } else {
-      MyStats.cellsciencePlayaPerformanceTest = "**cellscience 'playaPerformanceTest.js'** FAILURE";
+      MyStats.cellsciencePlayaPerformanceTest = "**dev-demo 'playaPerformanceTest.js'** FAILURE";
     }
     if (Menu.isOptionChecked("Smoke Test QA Pass - SUCCESS")) {
       MyStats.smokeTestQAPass = "**QA Pass** SUCCESS";
