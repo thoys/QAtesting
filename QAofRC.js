@@ -937,7 +937,7 @@ function rctest9_prompt() {
 
 function rctest10_prompt() {
 
-  rctest10 = Window.prompt(result_rc0);
+  rctest10 = Window.prompt(result_rc10);
 
 
 }
